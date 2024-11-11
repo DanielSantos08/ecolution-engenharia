@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecolution Engenharia</title>
+    <link rel="icon" href="images/logo-ecolution.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo"><img src="images/logo-ecolution.jpg" alt="logo-ecolution" class="logo-ecolution"></div>
+        <div class="hamburger-icon" onclick="toggleSidebar()">&#9776;</div>
+        <!-- Botão de Alternância de Tema -->
+        <button id="theme-toggle" class="theme-toggle">
+            &#9790; <!-- Ícone de lua para modo dark -->
+        </button>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">&times;</a>
+        <a href="#services">Nossos Serviços</a>
+        <a href="#about">Nossa História</a>
+        <a href="#contact">Contato</a>
+        <a href="#depoimentos">Depoimentos</a>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <section class="hero fade-in" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <h1 >Ecolution Consultoria Ambiental e Segurança do Trabalho</h1>
+        <p>Inovação sustentável, impacto duradouro.</p>
+        <!--<button onclick="redirecionarWhatsApp()">Peça pelo WhatsApp</button>-->
+        <div class="carrossel-html carrossel-principal">
+            <div class="fotos">
+                <img src="images/imagem1.jpg" alt="imagem1">
+                
+            </div>
+            <button class="prev" onclick="mover(-1, this)">&#10094;</button>
+            <button class="next" onclick="mover(1, this)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" data-aos="fade-up">
+        <h2 class="texto-verde">Nossos Serviços</h2>
+        <div class="services-container">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="carrossel-html">
+                    <div class="fotos">
+                        <img src="images/imagem2" alt="imagem2">
+                        
+                    </div>
+                    <button class="prev" onclick="mover(-1, this)">&#10094;</button>
+                    <button class="next" onclick="mover(1, this)">&#10095;</button>
+                </div>
+                <h3>Serviço 1</h3>
+
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="carrossel-html">
+                    <div class="fotos">
+                        <img src="images/iamegem3.jpg" alt="iamegem3">
+                       
+                    </div>
+                    <button class="prev" onclick="mover(-1, this)">&#10094;</button>
+                    <button class="next" onclick="mover(1, this)">&#10095;</button>
+                </div>
+                <h3>Serviço2</h3>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa História -->
+    <section id="about" class="text-section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <h2 class="texto-verde">Nossa História</h2>
+        <p>
+           A Ecolution nasceu com a missão de promover o desenvolvimento sustentável e a segurança no ambiente de trabalho, oferecendo soluções inovadoras que respeitam o meio ambiente e priorizam a qualidade de vida das pessoas. Fundada por engenheiros comprometidos com a preservação ambiental e a integridade dos trabalhadores, a Ecolution se especializou em projetos que minimizam o impacto ambiental e garantem a segurança em indústrias, empresas e construções civis. <br><br>
+
+        Desde o início, a Ecolution investiu em tecnologia e capacitação para estar sempre à frente nas práticas de engenharia ambiental e segurança. A empresa oferece serviços de consultoria em licenciamento ambiental, recuperação de áreas degradadas, gestão de resíduos, e auditorias de segurança. Além disso, possui expertise na implementação de sistemas de segurança do trabalho, como análises de riscos, planos de prevenção de acidentes, treinamentos e programas de saúde ocupacional. <br><br>
+
+        Guiada pelos valores de responsabilidade, inovação e ética, a Ecolution se destaca pela abordagem personalizada e pelo compromisso com soluções sustentáveis e eficazes para os desafios dos seus clientes. Ao longo dos anos, a Ecolution se consolidou no mercado como uma referência em engenharia ambiental e segurança do trabalho, contribuindo para a criação de um futuro mais seguro e ecologicamente equilibrado. <br><br>
+        </p>
+        <div class="carrossel-html carrossel-about">
+            <div class="fotos">
+                <img src="images/diego-ewerton.jpeg" alt="Diego Ewerton 1">
+                
+            </div>
+            <button class="prev" onclick="mover(-1, this)">&#10094;</button>
+            <button class="next" onclick="mover(1, this)">&#10095;</button>
+        </div>
+        <p class="about-paragraph">Ecolution Engenharia - por Diego Ewerthon - Engenheiro Ambiental e Sanitarista | ISO 9001 • ISO 14001 | Licenciamento Ambiental e Agronegócios.</p>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <h2 class="texto-verde">Entre em Contato</h2>
+        <p>Siga a Ecolution nas redes:</p>
+        <a href="https://www.instagram.com/ecolutionengenharia" target="_blank" class="instagram-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"
+                width="24" height="24">
+        </a>
+        <a href="https://www.linkedin.com/company/ecolutionengenharia/?fbclid=PAZXh0bgNhZW0CMTEAAaYz3ffOHqyXcuSyPvvog7fKzw9m5HxP9KML5ajZBjUUqBZ_B5TCU4DFQI8_aem_I6PNikLEqz9K6RMLjXlK1Q" target="_blank" class="linkedin-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" width="24" height="24">
+        </a>
+        <p>Faça seu orçamento com quem entende!.</p>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos" class="depoimentos-section" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        <h2 class="texto-verde">O que Nossos Clientes Dizem</h2>
+        <div class="depoimento">
+            <blockquote>
+                <p>“A Ecolution foi essencial para garantir que nossos processos estivessem de acordo com todas as normas ambientais. O comprometimento e a responsabilidade com o meio ambiente são visíveis em cada projeto que realizam. Recomendo para qualquer empresa que preza pela sustentabilidade!”</p>
+                <footer>– Lucas Andrade, Gerente de Operações</footer>
+              </blockquote>
+            
+        </div>
+        <div class="depoimento">
+            <blockquote>
+                <p>“Nossa parceria com a Ecolution transformou nossa abordagem em segurança no trabalho. Desde as análises de risco até os treinamentos práticos, a equipe foi altamente qualificada e atenciosa. Sinto que nossos colaboradores estão muito mais seguros e preparados.”</p>
+                <footer>– Mariana Farias, Diretora de RH</footer>
+              </blockquote>
+        </div>
+        <div class="depoimento">
+            <blockquote>
+                <p>“Contar com a Ecolution foi um divisor de águas na gestão dos nossos resíduos. Com soluções sustentáveis e inovadoras, eles nos ajudaram a reduzir o impacto ambiental e a otimizar processos internos. É um orgulho fazer parte de uma iniciativa que contribui para o futuro do planeta.”</p>
+                <footer>– Ricardo Moretti, CEO da GreenTech</footer>
+              </blockquote>
+        </div>
+        <div class="depoimento">
+            <blockquote>
+                <p>“A equipe da Ecolution superou nossas expectativas com um atendimento personalizado e projetos que realmente consideraram nossas necessidades e desafios. Além de serem especialistas no que fazem, possuem uma abordagem humana e responsável.”</p>
+                <footer>– Fernanda Lima, Coordenadora de Projetos Ambientais</footer>
+              </blockquote>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ecolution Engenharia. Todos os direitos reservados.</p>
+    </footer>
+    <a onclick="redirecionarWhatsApp()" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+        <span class="badge">1</span>
+        <span class="tooltip">Ecolution engenharia, estamos online para te atender!.</span>
+    </a>
+
+    <!-- Notificação de Chat ao Carregar -->
+    <div class="chat-notification" id="chat-notification">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="24"
+            height="24">
+        <p>Ecolution engenharia está online para te atender!</p>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
