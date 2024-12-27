@@ -614,12 +614,9 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .carrossel-principal .fotos img {
-        height: 500px; 
-    }
-    .carrossel-about .fotos img{
-        height: 300px; 
-    }
+   .service-card{
+    width: 100%;
+   }
     .products-container {
         flex-direction: column;
         align-items: center;
@@ -651,9 +648,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-    .carrossel-principal .fotos img {
-        height: 400px; 
-    }
     header {
         padding: 15px;
     }
