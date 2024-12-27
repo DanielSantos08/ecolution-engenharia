@@ -143,7 +143,7 @@ header .logo-ecolution {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: #1bd863 url('/images/engenhariaambiental1.jpg') center/cover no-repeat;
+    background: #ffffff url('/images/engenhariaambiental1.jpg') center/cover no-repeat;
     /*filter: brightness(80%);*/
     position: relative;
     color: #000000;
@@ -186,7 +186,7 @@ header .logo-ecolution {
 }
 
 .service-card .fotos img {
-    height: 230px;
+    /*height: 230px;*/
     /* Ajusta a imagem para preencher o tamanho especificado */
 }
 
@@ -317,6 +317,8 @@ button {
 
 .services-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -324,7 +326,7 @@ button {
 
 .service-card {
     background-color: #fff;
-    width: 200px;
+    width: 500px;
     border-radius: 8px;
     box-shadow: 7px 4px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;
@@ -383,7 +385,7 @@ button {
 /* Estilo para o carrossel na seção "Sobre Nós" */
 .carrossel-about {
     position: relative;
-    max-width: 300px; /* Maior que os cartões de produtos e serviços */
+    max-width: 600px; /* Maior que os cartões de produtos e serviços */
     margin: 20px auto;
     overflow: hidden;
     border-radius: 15px;
@@ -392,8 +394,18 @@ button {
 
 /* Centralizar o parágrafo */
 .about-paragraph {
-    text-align: center !important;
+    text-align: justify !important;
 }
+
+.about-paragraph ul {
+    margin-left: 20px !important; /* Adiciona um espaço à esquerda para a lista */
+    padding-left: 20px !important; /* Adiciona espaço interno à esquerda para a lista */
+}
+.about-paragraph li {
+    text-align: justify !important;
+    margin-left: 200px !important; /* Adiciona um espaço à esquerda para a lista */
+}
+
 
 .carrossel-about .fotos {
     display: flex;
