@@ -833,6 +833,10 @@ footer {
     color: #fff;
 }
 
+.dark-mode #contact li {
+    color: #fff;
+}
+
 /* Modo Escuro para a Seção de Depoimentos */
 .dark-mode .depoimentos-section {
     background-color: #1e1e1e; /* Fundo escuro */
