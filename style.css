@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     background-color: rgba(251, 251, 251, 0.9);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /*position: sticky;*/
@@ -142,7 +142,6 @@ header .logo-ecolution {
 /* Seção de Apresentação */
 .hero {
     text-align: center;
-    padding: 60px 20px;
     background: #ffffff url('/images/engenhariaambiental1.jpg') center/cover no-repeat;
     /*filter: brightness(80%);*/
     position: relative;
@@ -183,11 +182,6 @@ header .logo-ecolution {
 
 .product-card .fotos img {
     height: 230px;
-}
-
-.service-card .fotos img {
-    /*height: 230px;*/
-    /* Ajusta a imagem para preencher o tamanho especificado */
 }
 
 .carrossel-html {
@@ -304,7 +298,7 @@ button {
 }
 
 #services {
-    padding: 40px 20px;
+    padding: 05px 20px;
     background-color: #ffffff;
     text-align: center;
 }
@@ -326,7 +320,7 @@ button {
 
 .service-card {
     background-color: #fff;
-    width: 500px;
+    width: 600px;
     border-radius: 8px;
     box-shadow: 7px 4px 6px rgba(0, 0, 0, 0.5);
     overflow: hidden;
