@@ -44,7 +44,7 @@ header .logo {
 }
 
 header .logo:hover {
-    transform: scale(1.05);
+    transform: translateX(20px);
 }
 
 header .logo-ecolution {
@@ -750,6 +750,12 @@ footer {
 
 /* Modo Escuro (Dark Mode) via Classe */
 /* Brilho no Logo no Modo Dark */
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
 .dark-mode .logo-ecolution {
     filter: brightness(1.2);
     transition: filter 0.3s ease;
