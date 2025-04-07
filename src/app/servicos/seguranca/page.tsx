@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaCheckCircle, FaArrowRight, FaHardHat, FaShieldAlt, FaUserShield } from 'react-icons/fa';
 
@@ -72,17 +71,17 @@ export default function ConsultoriaSegurancaPage() {
           >
             <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">Proteção e Bem-estar no Trabalho</h3>
             <p className="text-gray-700 dark:text-gray-300 mb-6">
-              A Ecolution oferece serviços especializados em consultoria em segurança do trabalho para empresas 
-              de todos os setores. Nossa equipe de profissionais qualificados trabalha para garantir ambientes 
+              A Ecolution oferece serviços especializados em consultoria em segurança do trabalho para empresas
+              de todos os setores. Nossa equipe de profissionais qualificados trabalha para garantir ambientes
               de trabalho seguros e saudáveis, em conformidade com a legislação vigente.
             </p>
             <p className="text-gray-700 dark:text-gray-300">
-              Desenvolvemos soluções personalizadas que ajudam sua empresa a prevenir acidentes, reduzir riscos 
-              ocupacionais e promover a saúde dos trabalhadores, contribuindo para o aumento da produtividade 
+              Desenvolvemos soluções personalizadas que ajudam sua empresa a prevenir acidentes, reduzir riscos
+              ocupacionais e promover a saúde dos trabalhadores, contribuindo para o aumento da produtividade
               e a redução de custos relacionados a afastamentos e indenizações.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -94,7 +93,7 @@ export default function ConsultoriaSegurancaPage() {
 
         <div className="mb-16">
           <h3 className="text-2xl font-semibold mb-8 text-center text-gray-800 dark:text-white">Nossos Serviços em Segurança do Trabalho</h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {servicosSeguranca.map((servico, index) => (
               <motion.div
@@ -122,7 +121,7 @@ export default function ConsultoriaSegurancaPage() {
 
         <div className="bg-blue-50 dark:bg-blue-900/20 p-8 rounded-lg">
           <h3 className="text-2xl font-semibold mb-6 text-center text-gray-800 dark:text-white">Vantagens da Consultoria em Segurança do Trabalho</h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
               <div className="flex justify-center mb-4">
@@ -131,7 +130,7 @@ export default function ConsultoriaSegurancaPage() {
               <h4 className="font-semibold mb-2 text-gray-800 dark:text-white">Prevenção de Acidentes</h4>
               <p className="text-gray-600 dark:text-gray-300">Redução significativa de acidentes e incidentes no ambiente de trabalho.</p>
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
               <div className="flex justify-center mb-4">
                 <FaShieldAlt className="text-blue-500 text-3xl" />
@@ -139,7 +138,7 @@ export default function ConsultoriaSegurancaPage() {
               <h4 className="font-semibold mb-2 text-gray-800 dark:text-white">Conformidade Legal</h4>
               <p className="text-gray-600 dark:text-gray-300">Adequação às normas e regulamentos de segurança, evitando multas e autuações.</p>
             </div>
-            
+
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
               <div className="flex justify-center mb-4">
                 <FaUserShield className="text-blue-500 text-3xl" />
@@ -148,10 +147,10 @@ export default function ConsultoriaSegurancaPage() {
               <p className="text-gray-600 dark:text-gray-300">Desenvolvimento de uma cultura organizacional voltada para a segurança e bem-estar.</p>
             </div>
           </div>
-          
+
           <div className="text-center">
-            <Link 
-              href="/contato" 
+            <Link
+              href="/contato"
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition-colors"
             >
               Solicite um orçamento <FaArrowRight />

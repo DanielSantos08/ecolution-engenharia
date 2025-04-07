@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { FaStar } from 'react-icons/fa';
 
 import PageSection from '../components/ui/PageSection';
-import TestimonialCard from '../components/ui/TestimonialCard';
 
 export default function DepoimentosPage() {
   const testimonials = [
@@ -49,9 +48,9 @@ export default function DepoimentosPage() {
 
   const renderStars = (rating: number) => {
     return Array(5).fill(0).map((_, i) => (
-      <FaStar 
-        key={i} 
-        className={i < rating ? "text-yellow-500" : "text-gray-300 dark:text-gray-600"} 
+      <FaStar
+        key={i}
+        className={i < rating ? "text-yellow-500" : "text-gray-300 dark:text-gray-600"}
       />
     ));
   };
@@ -60,7 +59,7 @@ export default function DepoimentosPage() {
     <div>
       <PageSection title="Depoimentos de Clientes" titleColor="green">
         <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Veja o que nossos clientes têm a dizer sobre nossos serviços de consultoria ambiental, 
+          Veja o que nossos clientes têm a dizer sobre nossos serviços de consultoria ambiental,
           segurança do trabalho e alimentos.
         </p>
 
@@ -77,11 +76,11 @@ export default function DepoimentosPage() {
                 <div className="flex mb-4">
                   {renderStars(testimonial.rating)}
                 </div>
-                
+
                 <blockquote className="mb-4 text-gray-700 dark:text-gray-300 italic flex-grow">
-                  "{testimonial.quote}"
+                  &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
-                
+
                 <footer className="mt-auto">
                   <p className="font-semibold text-gray-800 dark:text-white">{testimonial.author}</p>
                   {testimonial.position && (
@@ -97,8 +96,8 @@ export default function DepoimentosPage() {
           <p className="text-gray-700 dark:text-gray-300 mb-6">
             Quer compartilhar sua experiência com a Ecolution?
           </p>
-          <Link 
-            href="/contato" 
+          <Link
+            href="/contato"
             className="inline-block bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg transition-colors"
           >
             Envie seu depoimento

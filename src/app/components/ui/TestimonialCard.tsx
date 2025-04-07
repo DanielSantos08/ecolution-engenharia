@@ -20,7 +20,7 @@ const TestimonialCard = ({ quote, author, position }: TestimonialCardProps) => {
     >
       <FaQuoteLeft className="text-green-500 text-3xl mb-4" />
       <blockquote className="mb-4 text-gray-700 dark:text-gray-300 italic">
-        "{quote}"
+        &ldquo;{quote}&rdquo;
       </blockquote>
       <footer className="text-right">
         <p className="font-semibold text-gray-800 dark:text-white">{author}</p>
