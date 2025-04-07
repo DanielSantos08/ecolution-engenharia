@@ -1,0 +1,10 @@
+{
+  "name": "ecolution-engenharia",
+  "description": "Site da Ecolution Engenharia",
+  "repository": "https://github.com/DanielSantos08/ecolution-engenharia",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
