@@ -16,23 +16,26 @@ export async function POST(request: NextRequest) {
     // Configuração do transporte de email
     // Nota: Em produção, use variáveis de ambiente para estas credenciais
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'smtp.mail.yahoo.com',
+      port: 465,
+      secure: true, // true para 465, false para outras portas
       auth: {
-        user: process.env.EMAIL_USER || 'seu-email@gmail.com',
+        user: process.env.EMAIL_USER || 'seu-email@yahoo.com',
         pass: process.env.EMAIL_PASS || 'sua-senha-ou-app-password'
-      }
+      },
+      debug: true // Ativa logs para debug
     });
 
     // Configuração do email
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'seu-email@gmail.com',
+      from: process.env.EMAIL_USER || 'seu-email@yahoo.com',
       to: process.env.EMAIL_TO || 'contato@ecolutionengenharia.com.br',
       subject: `Novo contato do site - ${name}`,
       text: `
         Nome: ${name}
         Email: ${email}
         Telefone: ${phone || 'Não informado'}
-        
+
         Mensagem:
         ${message}
       `,
@@ -52,8 +55,16 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Erro ao enviar email:', error);
+
+    // Detalhes mais específicos do erro para ajudar no debug
+    let errorMessage = 'Erro ao enviar mensagem';
+    if (error instanceof Error) {
+      errorMessage = `${errorMessage}: ${error.message}`;
+      console.error('Stack trace:', error.stack);
+    }
+
     return NextResponse.json(
-      { error: 'Erro ao enviar mensagem' },
+      { error: errorMessage },
       { status: 500 }
     );
   }

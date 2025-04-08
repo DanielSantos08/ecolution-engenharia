@@ -20,15 +20,7 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  // Função para enviar mensagem para o WhatsApp
-  const sendToWhatsApp = () => {
-    // Usa o número do WhatsApp definido no .env.local ou um valor padrão
-    const numeroWhatsApp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5571999470541";
-    const mensagemFormatada = `*Contato do Site*\n\n*Nome:* ${formData.name}\n*Email:* ${formData.email}\n*Telefone:* ${formData.phone || 'Não informado'}\n\n*Mensagem:*\n${formData.message}`;
-
-    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagemFormatada)}`;
-    window.open(url, "_blank");
-  };
+  // WhatsApp functionality removed as requested
 
   // Função para enviar email através da API
   const sendEmail = async () => {
@@ -65,9 +57,6 @@ const ContactForm = () => {
       // Tenta enviar o email
       await sendEmail();
 
-      // Se o email for enviado com sucesso, envia para o WhatsApp
-      sendToWhatsApp();
-
       setSubmitStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (error) {
@@ -94,7 +83,7 @@ const ContactForm = () => {
 
       {submitStatus === 'success' && (
         <div className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 p-4 rounded-lg mb-6">
-          Mensagem enviada com sucesso! Entraremos em contato em breve.
+          Mensagem enviada com sucesso! Recebemos seu contato por email. Entraremos em contato em breve.
         </div>
       )}
 
