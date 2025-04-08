@@ -48,7 +48,7 @@ export default function ContatoPage() {
                 <FaEnvelope className="text-green-600 text-xl mt-1 mr-4" />
                 <div>
                   <h4 className="font-medium text-gray-800 dark:text-white">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-300">contato@ecolutionengenharia.com.br</p>
+                  <p className="text-gray-600 dark:text-gray-300">ecolutionengenhariaambiental@yahoo.com</p>
                 </div>
               </div>
             </div>
